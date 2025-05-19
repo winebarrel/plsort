@@ -66,7 +66,7 @@ func authorize(config *oauth2.Config) (string, error) {
 	fmt.Printf("Go to the following link in your browser: \n%s\n", authURL)
 
 	params := <-ch
-	server.Shutdown(context.Background())
+	server.Shutdown(context.Background()) //nolint:errcheck
 	err = eg.Wait()
 
 	if err != nil {

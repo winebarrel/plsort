@@ -81,7 +81,7 @@ func (client *Client) Sort(ctx context.Context, options *SortOptions) error {
 			return fmt.Errorf("unable to update playlist items: %w", err)
 		}
 
-		bar.Add(1)
+		bar.Add(1) //nolint:errcheck
 	}
 
 	return nil
