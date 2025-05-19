@@ -25,7 +25,7 @@ func tokenCacheFile() string {
 	}
 
 	tokenCacheDir := filepath.Join(usr.HomeDir, ".credentials")
-	os.MkdirAll(tokenCacheDir, 0700)
+	os.MkdirAll(tokenCacheDir, 0700) //nolint:errcheck
 	cacheFile := filepath.Join(tokenCacheDir, url.QueryEscape("plsort_secrets.json"))
 
 	return cacheFile
@@ -71,7 +71,7 @@ func saveToken(file string, token *oauth2.Token) error {
 	}
 
 	defer f.Close()
-	json.NewEncoder(f).Encode(token)
+	json.NewEncoder(f).Encode(token) //nolint:errcheck
 
 	return nil
 }
@@ -87,10 +87,10 @@ func getHTTPClient(ctx context.Context, config *oauth2.Config) (*http.Client, er
 			return nil, err
 		}
 
-		saveToken(cacheFile, tok)
+		err = saveToken(cacheFile, tok)
 	}
 
-	return config.Client(ctx, tok), nil
+	return config.Client(ctx, tok), err
 }
 
 func NewYoutube(ctx context.Context, credsPath string) (*youtube.Service, error) {
