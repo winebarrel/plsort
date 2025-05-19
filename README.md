@@ -24,4 +24,11 @@ Flags:
 
 ## Getting Started
 
-TODO
+1. Create OAuth client ID, download the credentials and save them as `client_secret.json`.
+    * see ｃhttps://developers.google.com/youtube/v3/quickstart/go
+2. Get YoutTube Playlist ID.
+    * ![](https://github.com/user-attachments/assets/54150b84-7d4a-4656-83ba-61a9314f1c2c)
+3. Run plsort.
+    ```sh
+    $ plsort PLXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    ```
