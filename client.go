@@ -73,16 +73,12 @@ func (client *Client) Sort(ctx context.Context, options *SortOptions) error {
 	bar := progressbar.Default(int64(len(items)))
 
 	for i, item := range items {
-		newPos := int64(i)
+		item.Snippet.Position = int64(i)
+		_, err := client.PlaylistItems.Update([]string{"snippet"}, item).
+			Context(ctx).Do()
 
-		if item.Snippet.Position != newPos {
-			item.Snippet.Position = newPos
-			_, err := client.PlaylistItems.Update([]string{"snippet"}, item).
-				Context(ctx).Do()
-
-			if err != nil {
-				return fmt.Errorf("unable to update playlist items: %w", err)
-			}
+		if err != nil {
+			return fmt.Errorf("unable to update playlist items: %w", err)
 		}
 
 		bar.Add(1)
