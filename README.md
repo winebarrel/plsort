@@ -3,7 +3,8 @@
 plsort is a tool that sorts YouTube playlist items in lexicographic order by title.
 
 > [!note]
-> Need to create a GCP project to use YouTube Data API.
+> Need to create a GCP project to use [YouTube Data API](https://developers.google.com/youtube/v3).
+> 
 > see https://developers.google.com/youtube/v3/getting-started
 
 ## Usage
