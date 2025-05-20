@@ -7,6 +7,11 @@ plsort is a tool that sorts YouTube playlist items in lexicographic order by tit
 > 
 > see https://developers.google.com/youtube/v3/getting-started
 
+> [!warning]
+> Sorting playlist items spends a lot of quota cost.
+> 
+> see https://developers.google.com/youtube/v3/determine_quota_cost
+
 ## Usage
 
 ```
