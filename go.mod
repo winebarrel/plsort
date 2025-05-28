@@ -8,7 +8,7 @@ require (
 	github.com/schollz/progressbar/v3 v3.18.0
 	golang.org/x/oauth2 v0.30.0
 	golang.org/x/sync v0.14.0
-	google.golang.org/api v0.234.0
+	google.golang.org/api v0.235.0
 )
 
 require (
