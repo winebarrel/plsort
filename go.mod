@@ -7,7 +7,7 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/schollz/progressbar/v3 v3.18.0
 	golang.org/x/oauth2 v0.30.0
-	golang.org/x/sync v0.14.0
+	golang.org/x/sync v0.15.0
 	google.golang.org/api v0.236.0
 )
 
