@@ -5,7 +5,7 @@ go 1.25.8
 require (
 	github.com/alecthomas/kong v1.15.0
 	github.com/google/uuid v1.6.0
-	github.com/schollz/progressbar/v3 v3.19.0
+	github.com/schollz/progressbar/v3 v3.19.1
 	golang.org/x/oauth2 v0.36.0
 	golang.org/x/sync v0.21.0
 	google.golang.org/api v0.286.0
