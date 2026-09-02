@@ -1,6 +1,6 @@
 module github.com/winebarrel/plsort
 
-go 1.25.8
+go 1.26.0
 
 require (
 	github.com/alecthomas/kong v1.16.1
@@ -8,7 +8,7 @@ require (
 	github.com/schollz/progressbar/v3 v3.19.1
 	golang.org/x/oauth2 v0.36.0
 	golang.org/x/sync v0.22.0
-	google.golang.org/api v0.296.0
+	google.golang.org/api v0.297.0
 )
 
 require (
