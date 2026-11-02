@@ -3,7 +3,7 @@ module github.com/winebarrel/plsort
 go 1.26.0
 
 require (
-	github.com/alecthomas/kong v1.16.1
+	github.com/alecthomas/kong v1.17.0
 	github.com/google/uuid v1.6.0
 	github.com/schollz/progressbar/v3 v3.19.1
 	golang.org/x/oauth2 v0.37.0
